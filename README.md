@@ -60,17 +60,17 @@ Git reset command use to unsatge or drop commits of current branch.
 - mixed(default)
 - soft
 
-**i. --hard:** It will resets the current branch commit, and also deletes any changes in the working directory and staging area. 
+**i. --hard:** It will resets the current branch commit, and also deletes all changes in the working directory and staging area. 
 ```
 git reset --hard {commit's hash where you want to go}
 ```
 
-**ii. --mixed:** It will resets the current branch commit, and also unsatge any changes in the working directory and staging area. 
+**ii. --mixed:** It will resets the current branch commit, and also unsatge all changes in the working directory and staging area. 
 ```
 git reset --mixed {commit's hash where you want to go}
 ```
 
-**iii. --soft:** It will resets the current branch commit, but all staged changes remain as it is. 
+**iii. --soft:** It will resets the current branch commit, but all staged changes remaining as it is. 
 ```
 git reset --soft {commit's hash where you want to go}
 ```
