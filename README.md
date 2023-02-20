@@ -139,7 +139,7 @@ git stash apply
 # apply particular stash changes
 git stash apply {stash number}
 ```
-**Note:** you can't run ```git stash apply``` command couple of times you have to 
+**Note:** you can't run ```git stash apply``` command couple of times.
 
 We can drop all stash from stash's stack using ```clear``` that we can't get back our changes.
 ```
