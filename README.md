@@ -228,8 +228,9 @@ When you do by mistake merge two branches and if you want to unmerge those branc
 git reset --merge HEAD~1
 ```
 
-***But*** if you have merge commit on remote server then you can't use above command beacuse git will tell you first pull repo from remote server and then push the code on remote branch so it will not work for that you have to ```checkout``` previous commit  and use ```push --force``` command to forcely push on remote server.
-***Note: It's very dangerous for branch network.***
+**But** if you have merge commit on remote server then you can't use above command beacuse git will tell you first pull repo from remote server and then push the code on remote branch so it will not work for that you have to ```checkout``` previous commit  and use ```push --force``` command to forcely push on remote server.
+
+**Note: It's very dangerous for branch network.**
 ```
 git push --force {branch-name}
 ```
