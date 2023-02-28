@@ -221,3 +221,14 @@ Git diff command show the difference between two branches or commits.
 git diff {branch-1} {branch-2}
 git diff {commit-1} {commit-2}
 
+### Extra Notes
+When you do by mistake merge two branches and if you want to unmerge those branches then you should use ```reset``` command to undo merged commit.
+```
+git reset --merge HEAD~1
+```
+
+***But*** if you have merge commit on remote server then you can't use above command beacuse git will tell you first pull repo from remote server and then push the code on remote branch so it will not work for that you have to ```checkout``` previous commit  and use ```push --force``` command to forcely push on remote server.
+***Note: It's very dangerous for branch network.***
+```
+git push --force {branch-name}
+```
